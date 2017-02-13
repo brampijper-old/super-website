@@ -1,0 +1,458 @@
+@font-face {
+    font-family: 'Simplifica'; /*a name to be used later*/
+    src: url(fonts/Simplifica.ttf);
+}
+
+/**************************** NAVbar  Section *************************/
+
+.nav-wrapper {
+	background-color:#1976D2;
+}
+
+/**************************** HEADER  Section *************************/
+
+
+#header {
+	background-color: #90CAF9;
+}
+
+.vertical-align {
+	position: relative;
+  	top: 50%;
+  	transform: translateY(60%);
+}
+
+h1 {
+	letter-spacing: 6px;
+	font-family: 'Roboto Condensed';
+	color:#E3F2FD;
+	font-size: 6.0vw;
+	font-weight:300;
+}
+
+h5 {
+	font-family: 'Roboto Condensed';
+	font-weight:200;
+	color:#E3F2FD;
+}
+
+@media all and (min-width: 960px) {
+    .quick-photo {
+        opacity:0.85;
+        min-width:200px;
+        max-width:210px;
+        margin: 0 auto;
+    }
+
+    #header {
+        height:630px;
+        padding-bottom:5%;
+        margin-bottom:5%;
+    }
+
+    .photo-holder {
+        margin-top:14%;
+    }
+
+    .aboutme .card-panel {
+        margin-top: -10%;
+    }
+}
+
+@media all and (max-width: 959px) and (min-width: 600px) {
+    .quick-photo {
+        opacity:0.85;
+        min-width:100px;
+        max-width:200px;
+        margin: 0 auto;
+    }
+
+    #header {
+        height:630px;
+        padding-bottom:5%;
+        margin-bottom:5%;
+    }
+
+    .photo-holder {
+        margin-top:25%;
+    }
+
+    .aboutme .card-panel {
+        margin-top: -15%;
+    }
+}
+
+@media all and (max-width: 599px) and (min-width: 50px) {
+    .quick-photo {
+        opacity:0.85;
+        min-width:100px;
+        max-width:120px;
+        padding-bottom:5%;
+        margin: 0 auto;
+    }
+
+    #header {
+        height:470px;
+    }
+
+    .photo-holder {
+        margin-top:25%;
+    }
+
+    .aboutme .card-panel {
+        margin-top: -10%;
+    }
+}
+
+/**************************** ABOUT ME Section *************************/
+
+div {
+    display: block;
+}
+
+.about-panel {
+	background-color:#ECEFF1;
+
+}
+
+.about-panel h2 {
+	color:#2979FF;
+}
+
+.intro-text {
+	width:50%;
+	margin-left:5%;
+}
+
+
+.icon-row a {
+	display:inline-block;
+	margin-top:20%;
+	margin: 0 auto;
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:5%;
+}
+
+.fact-text {
+    width:80%;
+    margin: 0 auto;
+    margin-top:6%;
+    color:#E6EAEC;
+}
+
+.layered-content-title {
+    margin-top:-10%;
+}
+
+
+/**************************** SKILLS *************************/
+
+
+.progressBar {
+    width: 50%;
+    height:300px;
+    background-color: #FF3D00;
+    margin: 0 auto;
+    margin-top:30%;
+}
+
+.progressBar div {
+    color: #fff;
+    text-align: right;
+    line-height: 22px;
+    height:0;
+    background-color: #0099ff;
+}
+
+.progressBar {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.progressBar p {
+    transform: rotate(90deg);
+    transform-origin: 50%;
+}
+
+.extra-skills h5 {
+    color:#2979FF;
+    margin-bottom:5%;
+    margin-top:3%;
+}
+
+.extra-skills p {
+    margin-bottom:5%;
+}
+
+
+
+.skillbar {
+    position:relative;
+    display:block;
+    margin-bottom:15px;
+    width:100%;
+    background:#eee;
+    height:35px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -webkit-transition:0.4s linear;
+    -moz-transition:0.4s linear;
+    -ms-transition:0.4s linear;
+    -o-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    -moz-transition-property:width, background-color;
+    -ms-transition-property:width, background-color;
+    -o-transition-property:width, background-color;
+    transition-property:width, background-color;
+}
+
+.skillbar-title {
+    position:absolute;
+    top:0;
+    left:0;
+width:110px;
+    font-weight:bold;
+    font-size:13px;
+    color:#ffffff;
+    background:#6adcfa;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:4px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+    display:block;
+    background:rgba(0, 0, 0, 0.1);
+    padding:0 20px;
+    height:35px;
+    line-height:35px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+    height:35px;
+    width:0px;
+    background:#6adcfa;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+    position:absolute;
+    right:10px;
+    top:0;
+    font-size:11px;
+    height:35px;
+    line-height:35px;
+    color:#ffffff;
+    color:rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+
+
+
+/**************************** PROJECTS Section *************************/
+
+.project-holder img
+{
+    cursor:pointer;
+	cursor:hand;
+}
+
+.project-holder {
+    text-align: center;
+}
+
+h2 {
+	text-align:center;
+	font-weight: 800;
+	font-family: 'Open Sans Condensed';
+	color:#2979FF; 
+}
+
+.project-panel {
+	background-color:#ECEFF1;
+}
+
+.just-text a {
+    margin-top:4%;
+}
+
+.img-holder img {
+    margin-bottom:5%;
+    margin-top:7%;
+}
+
+/**************************** CONTACT  *************************/
+
+.contact-text {
+	color:#2979FF;
+}
+
+#myContact h5 {
+    color:black;
+}
+
+.collection .collection-item:last-child {
+    background-color:#0077b5;
+}
+
+#map {
+    width: 100%;
+    height: 250px;
+    margin-top:5%;
+}
+
+.btn-holder {
+    margin-top:3%;
+    margin-bottom:3%
+}
+
+.social-collection {
+    margin-bottom:8%;
+}
+
+/****************************Footer CSS Section *************************/
+
+.footer {
+	text-align:center;
+	color:white;
+}
+
+footer.page-footer {
+	background-color:#1976D2;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+
+
+
+/**************************** ANIMATION ABOUT ME PAGE  *************************/
+
+.about-panel {
+   
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.25);
+}
+
+.layer {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    background: #607D8B;
+    border-radius: 50%;
+    z-index: -99;
+    opacity: 0.99;
+    pointer-events: none;
+}
+
+.button-wrapper.clicked {
+    -webkit-transform: rotate(90deg) translateY(-1px);
+    -ms-transform: rotate(90deg) translateY(-1px);
+    transform: rotate(90deg) translateY(-1px);
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .3s all ease .6s;
+    transition: .3s all ease .6s;
+}
+
+.button-wrapper.clicked .main-button {
+    opacity: 0;
+    -webkit-transition: .3s all ease .3s;
+    transition: .3s all ease .3s;
+}
+
+.button-wrapper.clicked .layer {
+    -webkit-transform: scale(100);
+    -ms-transform: scale(100);
+    transform: scale(100);
+    -webkit-transition: 2.25s all ease .9s;
+    transition: 2.25s all ease .9s;
+}
+
+.layered-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.layered-content.active {
+    opacity: 1;
+}
+
+.close-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.layered-content.active .close-button {
+    -webkit-animation: .5s bounceIn;
+    animation: .5s bounceIn;
+}
+
+.content p {
+    opacity: 0;
+    position: relative;
+    top: -7.5px;
+}
+
+
+.layered-content.active .content p {
+    opacity: 1;
+    top: 0;
+    -webkit-transition: .5s all ease 1s;
+    transition: .5s all ease 1s;
+}
+
+#sidemark {
+    font-size: 10px;
+}
