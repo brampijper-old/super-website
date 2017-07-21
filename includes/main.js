@@ -57,24 +57,24 @@ function initMap() {
     [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}],
     {name: 'Styled Map'});
     
-    var uluru = {lat: 52.3702, lng: 4.8952};
+    var home = {lat: 52.3702, lng: 4.8952};
     var map = new google.maps.Map(document.getElementById('map'), {
         disableDefaultUI: true,
         zoom: 13,
         scrollwheel:  false,
-        center: uluru
+        center: home
     });
     var marker = new google.maps.Marker({
-        position: uluru,
+        position: home,
         map: map
     });
 
     google.maps.event.addDomListener(window, 'resize', function() {
     map.setCenter((document.body.offsetWidth<1104)
                     //<1104
-                  ? uluru
+                  ? home
                     //>=1104
-                  : uluru
+                  : home
               );
     });
 
@@ -84,5 +84,5 @@ function initMap() {
     map.setMapTypeId('styled_map'); 
 }
 
-console.log('Hello! Reach out to me if you read this super secret message')
+console.log('Hello! Reach out to me if you read this super secret message;)') 
 
