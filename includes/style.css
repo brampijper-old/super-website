@@ -36,7 +36,30 @@ h5 {
 	color:#E3F2FD;
 }
 
-@media all and (min-width: 960px) {
+@media all and (min-width: 1500px) {
+    .quick-photo {
+        opacity:0.85;
+        min-width:200px;
+        max-width:210px;
+        margin: 0 auto;
+    }
+
+    #header {
+        height:650px;
+        padding-bottom:5%;
+        margin-bottom:5%;
+    }
+
+    .photo-holder {
+        margin-top:14%;
+    }
+
+    .aboutme .card-panel {
+        margin-top: -10%;
+    }
+}
+
+@media all and (max-width: 1499px) and (min-width: 960px) {
     .quick-photo {
         opacity:0.85;
         min-width:200px;
