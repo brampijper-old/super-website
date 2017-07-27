@@ -316,13 +316,22 @@ h2 {
 	background-color:#ECEFF1;
 }
 
-.just-text a {
-    margin-top:4%;
+.text_box01 {
+    margin-top:8%;
 }
 
+.text_box02 {
+    margin-top:8%;
+}
+
+.text_box03 {
+    margin-top:8%;
+}
+
+
 .img-holder img {
-    margin-bottom:5%;
-    margin-top:7%;
+    margin-bottom:6%;
+    margin-top:4%;
 }
 
 /**************************** CONTACT  *************************/
