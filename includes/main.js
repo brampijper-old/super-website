@@ -3,8 +3,8 @@ $ ("document").ready(function () {
         $('.scrollspy').scrollSpy();
 
     //Changes the color of the header, slowly over time.     
-    var yellow = $("#header")
-    var speed = 8000;
+    var yellow = $("#box01")
+    var speed = 5000;
     function colorAnimate () {
          $(yellow).animate({'background-color': '#1565C0'}, speed, function(){ 
 

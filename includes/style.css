@@ -6,16 +6,61 @@
 /**************************** NAVbar  Section *************************/
 
 .nav-wrapper {
-	background-color:#1976D2;
+/*	background-color:#1976D2; */
+    background-color:white;
+}
+
+.nav-wrapper li a {
+    color: #1976D2;
+}
+
+nav.nav-center ul {
+    text-align: center;
+}
+nav.nav-center ul li {
+    display: inline;
+    float: none;
+}
+nav.nav-center ul li a {
+    display: inline-block;
 }
 
 /**************************** HEADER  Section *************************/
 
-
-#header {
-	background-color: #90CAF9;
+#box01 {
+    background-color: red;
+    width: 300px;
+    height: 50px;
+    position: absolute;
 }
 
+#box02 {
+    background-color: yellow;
+    width: 150px;
+    height: 50px;
+    margin-top:10%;
+    position: absolute;
+}
+#box03 {
+    background-color: purple;
+    width: 550px;
+    height: 50px;
+    margin-top:30%;
+    position: absolute;
+}
+
+
+#header {
+	background-color: black;
+}
+
+/*.img-container {
+    width:100%;
+    height:100%;
+  background-image: url('../pictures/mountains.jpg');
+  background-repeat: no-repeat;
+}
+*/
 .vertical-align {
 	position: relative;
   	top: 50%;
@@ -165,7 +210,7 @@ div {
 }
 
 .layered-content-title {
-    margin-top:7%;
+    margin-top:-5%;
 }
 
 
@@ -406,7 +451,7 @@ main {
     height: 50px;
     background: #607D8B;
     border-radius: 50%;
-    z-index: -99;
+    z-index: -1;
     opacity: 0.99;
     pointer-events: none;
 }

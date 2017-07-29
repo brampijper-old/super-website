@@ -7,9 +7,8 @@
       	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
       	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
       	<!--Import materialize.css-->
-      	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+      	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>
       	<link rel="stylesheet" type="text/css" href="includes/style.css">
-      	<link rel="shortcut icon" href="/pictures/favicon.ico" />
 
       	<!--Let browser know website is optimized for mobile-->
       	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -17,17 +16,17 @@
 <body>
 <main>
 	<div class="navbar-fixed">	
-		<nav>
+		<nav class="nav-center">
 			<div class="nav-wrapper">
 				 <a href="#" data-activates="mobile-demo" class="button-collapse hide-on-med-and-up"><i class="material-icons" style="margin-left: 20%;">menu</i></a>
-					<ul class="right hide-on-small-only"> 
+					<ul class="center hide-on-small-only"> 
 						<li><a href ="#header">Home</a></li>
 						<li><a href ="#about">About</a></li>
 						<li><a href ="#mySkills">Skills</a></li>
 						<li><a href ="#myProjects">Projects</a></li>
 						<li><a href ="#myContact">Contact</a></li>
 					</ul>
-					<ul class="side-nav hide-on-med-and-up" id="mobile-demo">
+					<ul class="center side-nav hide-on-med-and-up" id="mobile-demo">
         				<li><a href="#header">Home</a></li>
        					<li><a href="#about">About</a></li>
        					<li><a href="#mySkills">Skills</a></li>
@@ -38,6 +37,15 @@
 		</nav>
 	</div>
 	<div id="header" class="section scrollspy">
+
+	<div class="animated_boxes">
+		<div id="box01"></div>
+		<div id="box02"></div>
+		<div id="box03"></div>
+	</div>
+
+
+	<div class="img-container">
 		<div class="container">
 			<div class="row center-align">
 				<div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 textbox">
@@ -57,6 +65,7 @@
 				</div>
 			</div>
 		</div>
+</div>
 	</div>
 		<div class="row aboutme">
 			<div class="col l8 card-panel about-panel offset-l2 m10 offset-m1 s10 offset-s1">
@@ -65,8 +74,8 @@
 						<div id="about" class="section scrollspy">
 							<div class="row">
 								<div class="col s12 m12 l12 flow-text">
-									<p> After finishing a bootcamp as a full stack developer at the New York Design and Coding academy I chose to work at Das banner as a display advertising specialist. <br> <br>
-									Doing front-end development to program banners taught me about using the Greensock API where I have applied different animations to a lot advertisements. </p> <p> After jumping from project to project I quickly got the hang of it, which made me realise that I want something more challenging.
+									<p> After finishing a bootcamp as a full stack developer at the New York Design and Coding academy in Amsterdam I chose to work at Das banner as a display advertising specialist. <br> <br>
+									During my time as a front-end developer at Das Banner I mostly learned about using the Greensock API to apply different animations to a lot of advertisements. </p> <p> After jumping from project to project I quickly got the hang of it, which made me realise that I want something more challenging.
 									Now I'm looking for a new adventure where I can expand my front-end and back-end knowledge. <br><br>Feel free to drop me <a href="#myContact"> a line! </a> </p> 
 
 <!-- 									<p> The changing colors? Yes! those are my favorite hex codes, which is not realy important! <br> <br> What is important, however is that I created this web page as part of a program where I'm learning to become a full fledged wizard in JavaScript. <br><br> Right now, my magic is weak, but since I'm learning everyday my magic will grow stronger. I'm looking for opportunities starting from Jan 2017! <br><br>Interested? <a href="#myContact"> Pass </a> me spell! </p> -->
@@ -75,15 +84,15 @@
 									<div class="col s12 m12 l12 icon-row">
 										<div class="button-wrapper">
       										<div class="layer"></div>
-												<a class="btn-floating btn-large waves-effect waves-light red main-button"><i class="material-icons">mood</i></a>
+												<a class="btn-floating pulse btn-large waves-effect waves-light red main-button"><i class="material-icons">mood</i></a>
 										</div>
 										<div class="layered-content">
-      										<a class="btn-floating btn-large waves-effect waves-light red close-button"><i class="material-icons">close</i></a>
+      										<a class="btn-floating pulse btn-large waves-effect waves-light red close-button"><i class="material-icons">close</i></a>
 										      <div class="content">
 										      <h2 class="layered-content-title" style="color: #E3F2Fd"> Random Facts </h2> <br>
 										      	<p class="flow-text fact-text"> I love cooking and eating food. </p>
 										      	<br>
-										      	<p class="flow-text fact-text"> If I see an opportunity to travel and go on an adventure I will most definitely go. </p>
+										      	<p class="flow-text fact-text"> If I see an opportunity to travel in my spare time I will most definitely go. </p>
 										      	<br>
 										      	<p class="flow-text fact-text"> I'm always up for a good cup of coffee or tea. </p>
 										      	<br>
@@ -220,7 +229,7 @@
 	               							<a class="btn blue" href="https://goo.gl/xksljJ" target="_blank">LinkedIn</a>
 	               						</div>
 	               						<div class="col l3 m6 s12 btn-holder">
-	               							<a class="btn  black-text white" href="https://github.com/brampijper" target="_blank">GitHub</a>
+	               							<a class="btn black-text white" href="https://github.com/brampijper" target="_blank">GitHub</a>
 	               						</div>
 	               						<div class="col l3 m6 s12 btn-holder">
 	               							<a class="btn red white-text" href="mailto:brampijper@gmail.com">E-mail</a>
