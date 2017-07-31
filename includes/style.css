@@ -27,44 +27,10 @@ nav.nav-center ul li a {
 
 /**************************** HEADER  Section *************************/
 
-#box01 {
-    background-color: red;
-    width: 300px;
-    height: 50px;
-    position: absolute;
-}
-
-#box02 {
-    background-color: yellow;
-    width: 150px;
-    height: 50px;
-    margin-top:10%;
-    position: absolute;
-}
-#box03 {
-    background-color: purple;
-    width: 550px;
-    height: 50px;
-    margin-top:30%;
-    position: absolute;
-}
-
-
-#header {
-	background-color: black;
-}
-
-/*.img-container {
-    width:100%;
-    height:100%;
-  background-image: url('../pictures/mountains.jpg');
-  background-repeat: no-repeat;
-}
-*/
 .vertical-align {
 	position: relative;
   	top: 50%;
-  	transform: translateY(60%);
+  	transform: translateY(40%);
 }
 
 h1 {
@@ -82,12 +48,6 @@ h5 {
 }
 
 @media all and (min-width: 1500px) {
-    .quick-photo {
-        opacity:0.85;
-        min-width:200px;
-        max-width:210px;
-        margin: 0 auto;
-    }
 
     #header {
         height:650px;
@@ -95,22 +55,15 @@ h5 {
         margin-bottom:5%;
     }
 
-    .photo-holder {
-        margin-top:14%;
-    }
-
     .aboutme .card-panel {
         margin-top: -10%;
+    }
+    svg {
+        height:170px;
     }
 }
 
 @media all and (max-width: 1499px) and (min-width: 960px) {
-    .quick-photo {
-        opacity:0.85;
-        min-width:200px;
-        max-width:210px;
-        margin: 0 auto;
-    }
 
     #header {
         height:500px;
@@ -118,22 +71,16 @@ h5 {
         margin-bottom:5%;
     }
 
-    .photo-holder {
-        margin-top:14%;
-    }
-
     .aboutme .card-panel {
         margin-top: -10%;
+    }
+
+    svg {
+        height:150px;
     }
 }
 
 @media all and (max-width: 959px) and (min-width: 600px) {
-    .quick-photo {
-        opacity:0.85;
-        min-width:100px;
-        max-width:200px;
-        margin: 0 auto;
-    }
 
     #header {
         height:400px;
@@ -141,36 +88,41 @@ h5 {
         margin-bottom:5%;
     }
 
-    .photo-holder {
-        margin-top:25%;
-    }
-
     .aboutme .card-panel {
         margin-top: -15%;
+    }
+    svg {
+        height:140px;
     }
 }
 
 @media all and (max-width: 599px) and (min-width: 50px) {
-    .quick-photo {
-        opacity:0.85;
-        min-width:100px;
-        max-width:120px;
-        padding-bottom:5%;
-        margin: 0 auto;
-    }
 
     #header {
         height:300px;
     }
 
-    .photo-holder {
-        margin-top:25%;
-    }
-
     .aboutme .card-panel {
         margin-top: -10%;
     }
+
+    svg {
+        height:100px;
+    }
 }
+
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#header {
+  position: relative;
+  background:linear-gradient(150deg,#53f 35%,#05d5ff 75%,#a6ffcb 94%);
+}
+
 
 /**************************** ABOUT ME Section *************************/
 
@@ -416,7 +368,9 @@ h2 {
 }
 
 footer.page-footer {
-	background-color:#1976D2;
+/*	background-color:#1976D2;
+*/    background:linear-gradient(150deg,#53f 40%,#05d5ff 100%);
+
 }
 
 body {
@@ -533,3 +487,6 @@ main {
 #sidemark {
     font-size: 10px;
 }
+
+
+
