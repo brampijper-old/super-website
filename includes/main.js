@@ -2,22 +2,22 @@ $ ("document").ready(function () {
     $(".button-collapse").sideNav();
         $('.scrollspy').scrollSpy();
 
-    //Changes the color of the header, slowly over time.     
-    var yellow = $("#box01")
-    var speed = 5000;
-    function colorAnimate () {
-         $(yellow).animate({'background-color': '#1565C0'}, speed, function(){ 
+    // //Changes the color of the header, slowly over time.     
+    // var yellow = $("#box01")
+    // var speed = 5000;
+    // function colorAnimate () {
+    //      $(yellow).animate({'background-color': '#1565C0'}, speed, function(){ 
 
-         $(yellow).animate({'background-color': '#607D8B'}, speed, function(){ 
+    //      $(yellow).animate({'background-color': '#607D8B'}, speed, function(){ 
 
-         $(yellow).animate({'background-color': '#FF5722'}, speed, function(){
+    //      $(yellow).animate({'background-color': '#FF5722'}, speed, function(){
 
-         colorAnimate();
-         }); 
-         }); 
-         });
-    }
-    colorAnimate();
+    //      colorAnimate();
+    //      }); 
+    //      }); 
+    //      });
+    // }
+    // colorAnimate();
 
     $(document).on('scroll', function() {
         if($(this).scrollTop()>=$('.skill-panel').innerHeight()){

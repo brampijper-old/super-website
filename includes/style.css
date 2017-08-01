@@ -58,7 +58,7 @@ h5 {
     .aboutme .card-panel {
         margin-top: -10%;
     }
-    svg {
+    #svg_01 {
         height:170px;
     }
 }
@@ -75,7 +75,7 @@ h5 {
         margin-top: -10%;
     }
 
-    svg {
+    #svg_01 {
         height:150px;
     }
 }
@@ -91,7 +91,7 @@ h5 {
     .aboutme .card-panel {
         margin-top: -15%;
     }
-    svg {
+    #svg_01 {
         height:140px;
     }
 }
@@ -106,21 +106,32 @@ h5 {
         margin-top: -10%;
     }
 
-    svg {
+    #svg_01 {
         height:100px;
     }
 }
 
 
-svg {
+#svg_01 {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
+
 #header {
   position: relative;
   background:linear-gradient(150deg,#53f 35%,#05d5ff 75%,#a6ffcb 94%);
+}
+
+#background_elements {
+  position: absolute;
+  width:100%;
+  height: 1300px;  
+  background:linear-gradient(160deg, #4717F6 35%,#A239CA 75%,#0E0B16 94%);
+/*  background:linear-gradient(150deg, #05386B 35%,#8EE4AF 75%,#EDF5E1 94%);
+*/  margin-top:105%;
+  z-index: -50;
 }
 
 
