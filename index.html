@@ -3,7 +3,7 @@
 <head>
 	<title>Bram Pijper</title>
 		<!--Import Google Icon Font-->
-      	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
       	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
       	<!--Import materialize.css-->
@@ -20,20 +20,18 @@
 	<div class="navbar-fixed">	
 		<nav class="nav-center">
 			<div class="nav-wrapper">
-				 <a href="#" data-activates="mobile-demo" class="button-collapse hide-on-med-and-up"><i class="material-icons" style="margin-left: 20%; color:black;">menu</i></a>
+				 <a href="#" data-target="mobile-demo" class="sidenav-trigger hide-on-med-and-up"><i class="material-icons" style="margin-left: 20%; color:black;">menu</i></a>
 					<ul class="center hide-on-small-only"> 
 						<li><a href ="#header">Home</a></li>
 						<li><a href ="#about">About</a></li>
 						<li><a href ="#mySkills">Skills</a></li>
-						<li><a href ="#myProjects">Projects</a></li>
 						<li><a href ="#myContact">Contact</a></li>
 					</ul>
 		</nav>
-					<ul class="center side-nav hide-on-med-and-up" id="mobile-demo">
+					<ul class="center sidenav hide-on-med-and-up" id="mobile-demo">
         				<li><a href="#header">Home</a></li>
        					<li><a href="#about">About</a></li>
        					<li><a href="#mySkills">Skills</a></li>
-       					<li><a href="#myProjects">Projects</a></li>
         				<li><a href="#myContact">Contact</a></li>
       				</ul>
 			</div>
@@ -51,9 +49,6 @@
 				</div>
 			</div>
 		</div>
-  		<svg id="svg_01" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-    		<polygon class="svg--sm" fill="white" points="0,0 20,100 65,21 90,100 100,75 100,100 0,100"/>
-   		</svg>
 	</div>
 
 	<div class="row aboutme">
@@ -63,7 +58,7 @@
 					<div id="about" class="section scrollspy">
 						<div class="row">
 							<div class="col s12 m12 l12 flow-text">
-								<p> After finishing a boot camp as a full stack Javascript developer at the New York Design and Coding Academy in Amsterdam I chose to work at Das banner as a display advertising specialist. <br> <br>
+								<p> After finishing a boot camp to become a full stack Javascript developer at the New York Design and Coding Academy in Amsterdam I chose to work at Das banner as a display advertising specialist. <br> <br>
 								I learned about digital marketing, working directly with clients and started working on an internal banner preview product with Vue.js.
 								During the development of that internal program, I discovered my ambitions to go into the direction of front-end development. <br><br>Feel free to drop me <a href="#myContact"> a line! </a> </p> 
 							</div>
@@ -76,14 +71,14 @@
 									<div class="layered-content">
   										<a class="btn-floating pulse btn-large waves-effect waves-light red close-button"><i class="material-icons">close</i></a>
 									      <div class="content">
-									      <h2 class="layered-content-title" style="color: #E3F2Fd"> Random Facts </h2> <br>
+									      <h2 class="layered-content-title" style="color: #E3F2Fd"> Random Things </h2> <br>
 									      	<p class="flow-text fact-text"> I love cooking and eating food. </p>
 									      	<br>
-									      	<p class="flow-text fact-text"> Currently traveling in New Zealand </p>
+									      	<p class="flow-text fact-text"> Traveled to New Zealand in 2019. </p>
 									      	<br>
 									      	<p class="flow-text fact-text"> I'm always up for a good cup of coffee or tea. </p>
 									      	<br>
-									      	<p class="flow-text fact-text"> Cats before dogs. Permenantely. </p>
+									      	<p class="flow-text fact-text"> Active, out of door kind of guy. </p>
 									      </div>
 										</div>
 								</div>
@@ -99,13 +94,13 @@
 				<div class="row">
 					<h2 class= "center-align contact-text"> Skills* </h2>
 						<div id="mySkills" class="section scrollspy">
-							<div class="skillbar clearfix " data-percent="85%">
+							<div class="skillbar clearfix " data-percent="75%">
 								<div class="skillbar-title" style="background: #E45126;"><span>HTML5</span></div>
 								<div class="skillbar-bar" style="background: #F2672C;"></div>
 								<div class="skill-bar-percent">Writing awesome HTML code</div>
 							</div> <!-- End Skill Bar -->
 
-							<div class="skillbar clearfix " data-percent="80%">
+							<div class="skillbar clearfix " data-percent="75%">
 								<div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
 								<div class="skillbar-bar" style="background: #3498db;"></div>
 								<div class="skill-bar-percent">Writing powerfull CSS code</div>
@@ -123,97 +118,41 @@
 								<div class="skill-bar-percent">Writing pretty good JS code</div>
 							</div> <!-- End Skill Bar -->
 
-							<div class="skillbar clearfix " data-percent="70%">
+							<div class="skillbar clearfix " data-percent="40%">
 							<div class="skillbar-title" style="background: #8CC64C;"><span>Node.js</span></div>
 								<div class="skillbar-bar" style="background: #AED373;"></div>
 								<div class="skill-bar-percent">Working on my Node.js code</div>
 							</div> <!-- End Skill Bar -->
-							<p id='sidemark'> *These are just pretty bars to show what I know -> See my real coding skills on <a href='https://github.com/brampijper' target='_blank'>Github.</a></p>
 							<div class='row'>
 								<div class="col l12 m12 s12 extra-skills">
-									<h5>I also have knowledge in: </h5>
 										<div class="chip">Ajax</div>
 										<div class="chip">Postgresql</div>
 										<div class="chip">Confluence</div>
 										<div class="chip">SASS</div>
 										<div class="chip">GIT</div>
+										<br>
 										<div class="chip">Greensock</div>
 										<div class="chip">Game Design</div>
 										<div class="chip">Scrum</div>
 										<div class="chip">Vue.js</div>
+										<div class="chip">Advertising</div>
 
 								</div>	
 							</div>
+							<p id='sidemark'> *These are just pretty bars to show what I know -> See my real coding skills on <a href='https://github.com/brampijper' target='_blank'>Github.</a></p>
+
 					</div>
 			</div>
 		</div>
 	</div>
 
-		<div class="row myprojects">
-			<div class="col l8 card-panel project-panel offset-l2 m10 offset-m1 s10 offset-s1">
-				<div class="section center row">
-					<div class="row">
-						<h2 class= "center-align project-title"> Projects </h2>
-							<div id="myProjects" class="section scrollspy">
-								<div class="container project">
-  									<div class="row">
-    									<div class="col s12 m12 l12 project-holder">
-    										<div class='row'>
-												<div class="col s12 m6 l6 img-holder"> 
-													<div class="text_box01"> 
-														<strong>Sunup: 
-															<a href="https://goo.gl/D5CNsZ" target="_blank" alt='github project'>View on Github</a>
-														</strong>
-													</div>
-													<img class="col s12 m12 l12 materialboxed" src="pictures/sunup.png" />
-														<div class="chip">HTML + CSS</div>
-														<div class="chip">jQuery</div>
-														<div class="chip">Sequelize</div>
-														<div class="chip">Node.js</div>
-														<div class="chip">Sendgrid API</div>
-														<div class="chip">Google Maps API</div>
-												</div>
-
-										    	<div class="col s12 m6 l6 img-holder"> 
-										   			<div class="text_box02">
-											   			<strong> Explorify:
-															<a href="https://goo.gl/T0gTDh" target="_blank" alt='github project'>View on Github</a>
-														</strong>
-										    		</div>
-										   			<img class="col s12 m12 l12 materialboxed" src="pictures/explorify.png" />
-														<div class="chip">HTML + CSS</div>
-														<div class="chip">Node.js</div>
-														<div class="chip">Postgresql</div>
-														<div class="chip">SASS</div>
-														<div class="chip">Google Maps API</div>
-										   	 	</div>
-										    </div>
-												<div class="col s12 m6 l6 img-holder"> 
-										    		<div class="text_box03">
-											    		<strong> Blog Application:
-											    			<a href="https://goo.gl/LaF40C" target="_blank" alt='github project'>View on Github</a>
-											    		</strong>
-										    		</div> 
-										    		<img class="col s12 m12 l12 materialboxed" src="pictures/database.png" />
-														<div class="chip">HTML + CSS</div>
-														<div class="chip">Node.js</div>
-														<div class="chip">Postgresql</div>
-										    	</div>
-									    </div>
-									</div>				
-								</div>
-							</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="row contactme">
 			<div class="col l8 card-panel offset-l2 m10 offset-m1 s10 offset-s1">
 				<div class="section center row">
 					<div class="row">
-						<h2 class= "center-align contact-text"> Contact </h2>
+						<h2 class= "center-align contact-text"> Send me a message ;-) </h2>
 							<div id="myContact" class="section scrollspy">
- 								<p class="flow-text"> Feel free to send me a message trough the following social media: </p> 
+ 								<!-- <p class="flow-text"> Feel free to send me a message trough the following social media: </p>  -->
  								<div class="card-action social-collection">
 	 								<div class='row'> 
 	               						<div class="col l4 m6 s12 btn-holder">
@@ -225,9 +164,9 @@
 	               						<div class="col l4 m6 s12 btn-holder">
 	               							<a class="btn red white-text" href="mailto:brampijper@gmail.com">E-mail</a>
 	               						</div>
-	               					</div>
+									   </div>
                					</div>					
-									<h5 class='flow-text'> Currently traveling in New Zealand on a working holiday visa: </h5>
+									<h5 class='flow-text'> Current base of operations: Groningen  </h5>
 								<div id="map"></div>
 							</div>
 					</div>
@@ -253,12 +192,10 @@
         </footer>
             
 
-	<!--Import jQuery before materialize.js-->
-	<script type="text/javascript" src="includes/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="includes/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 	<script type="text/javascript" src="includes/main.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJsfWvfNXKjj_QQdMJ1B6D-ygjVdpYCuA&callback=initMap"></script>
-	<script type="text/javascript" src="includes/jquery.color.plus-names-2.1.2.min.js"></script>
 </main>
 </body>
 </html>
