@@ -1,23 +1,6 @@
 $ ("document").ready(function () {
-    $(".button-collapse").sideNav();
+    $('.sidenav').sidenav();
         $('.scrollspy').scrollSpy();
-
-    // //Changes the color of the header, slowly over time.     
-    // var yellow = $("#box01")
-    // var speed = 5000;
-    // function colorAnimate () {
-    //      $(yellow).animate({'background-color': '#1565C0'}, speed, function(){ 
-
-    //      $(yellow).animate({'background-color': '#607D8B'}, speed, function(){ 
-
-    //      $(yellow).animate({'background-color': '#FF5722'}, speed, function(){
-
-    //      colorAnimate();
-    //      }); 
-    //      }); 
-    //      });
-    // }
-    // colorAnimate();
 
     $(document).on('scroll', function() {
         if($(this).scrollTop()>=$('.skill-panel').innerHeight()){
@@ -57,7 +40,7 @@ function initMap() {
     [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}],
     {name: 'Styled Map'});
     
-    var home = {lat: -36.848461, lng: 174.763336};
+    var home = {lat: 53.2194, lng: 6.5665};
     var map = new google.maps.Map(document.getElementById('map'), {
         disableDefaultUI: true,
         zoom: 6,
@@ -69,20 +52,7 @@ function initMap() {
         map: map
     });
 
-    google.maps.event.addDomListener(window, 'resize', function() {
-    map.setCenter((document.body.offsetWidth<1104)
-                    //<1104
-                  ? home
-                    //>=1104
-                  : home
-              );
-    });
-
-    google.maps.event.trigger(window, 'resize')
-
     map.mapTypes.set('styled_map', styledMapType);
     map.setMapTypeId('styled_map'); 
 }
-
-console.log('Hello! Reach out to me if you read this super secret message;)') 
 
