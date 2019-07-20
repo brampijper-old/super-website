@@ -58,9 +58,7 @@ h5 {
     .aboutme .card-panel {
         margin-top: -10%;
     }
-    #svg_01 {
-        height:170px;
-    }
+
 }
 
 @media all and (max-width: 1499px) and (min-width: 960px) {
@@ -75,9 +73,6 @@ h5 {
         margin-top: -10%;
     }
 
-    #svg_01 {
-        height:150px;
-    }
 }
 
 @media all and (max-width: 959px) and (min-width: 600px) {
@@ -106,32 +101,26 @@ h5 {
         margin-top: -10%;
     }
 
-    #svg_01 {
-        height:100px;
-    }
-}
-
-
-#svg_01 {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 
 #header {
   position: relative;
-  background:linear-gradient(150deg,#53f 35%,#05d5ff 75%,#a6ffcb 94%);
 }
 
 #background_elements {
   position: absolute;
   width:100%;
   height: 1300px;  
-  /* background:linear-gradient(160deg, #4717F6 35%,#A239CA 75%,#0E0B16 94%); */
-/*  background:linear-gradient(150deg, #05386B 35%,#8EE4AF 75%,#EDF5E1 94%);
-*/  margin-top:105%;
   z-index: -50;
+  background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transform: skewY(-12deg);
+  transform: skewY(-12deg);
+  -webkit-transform-origin: 0;
+  transform-origin: 0;
 }
 
 
@@ -209,6 +198,10 @@ div {
     transform-origin: 50%;
 }
 
+.extra-skills {
+    margin-top: 50px;
+}
+
 .extra-skills h5 {
     color:#2979FF;
     margin-bottom:5%;
@@ -224,6 +217,8 @@ div {
 .skillbar {
     position:relative;
     display:block;
+    float:none;
+    margin: 0 auto;
     margin-bottom:15px;
     width:100%;
     background:#eee;
@@ -379,9 +374,7 @@ h2 {
 }
 
 footer.page-footer {
-/*	background-color:#1976D2;
-*/    background:linear-gradient(150deg,#53f 40%,#05d5ff 100%);
-
+    background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
 }
 
 body {
@@ -399,11 +392,12 @@ main {
 
 /**************************** ANIMATION ABOUT ME PAGE  *************************/
 
-.about-panel {
-   
+.about-panel, .skill-panel, .card-panel {
+    margin-bottom: 10rem;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25), 1px 5px 5px rgba(0, 0, 0, 0.22);
+    border-top: 1px solid  rgba(0, 0, 0, 0.25);
 }
 
 .layer {
@@ -496,7 +490,21 @@ main {
 }
 
 #sidemark {
+    margin-top: 50px;
     font-size: 10px;
+}
+
+.sidenav-overlay {
+    z-index: 0 !important;
+}
+
+.col .row {
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+}
+
+#my-skills {
+    margin: 0 auto;
 }
 
 
